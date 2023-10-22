@@ -13,8 +13,8 @@ import jakarta.persistence.Id;
 import java.util.Objects;
 @Entity
 public class Customer {
-    @Id
     private String addressId;
+    @Id
     private String customerId;
     private String firstName;
     private String lastName;

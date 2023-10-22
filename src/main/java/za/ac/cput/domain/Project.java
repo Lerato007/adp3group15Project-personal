@@ -7,12 +7,13 @@
 package za.ac.cput.domain;
 
 import jakarta.persistence.*;
-
 import java.util.Objects;
 
 @Entity
+//@Table(name = "project")
 public class Project {
     @Id
+//    @OneToOne(mappedBy = "project")
     private String projectId;
     @ManyToOne
     @JoinColumn(name = "customerId")
